@@ -265,5 +265,14 @@ img{
   overflow: hidden;
   margin-left: 15px;
 }
-
+.key{
+  width:70%;
+  margin-top: -20px;
+  margin-left: 70px;
+}
+.key2{
+  width:90%;
+  margin-top: 2px;
+  margin-left: 1px;
+}
 }
