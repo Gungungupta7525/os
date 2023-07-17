@@ -60,25 +60,26 @@ system itself.</p>
 <p>
 Many services are provided by OS to the user’s programs.
 Some of the OS services are listed below</p>
-<b>Program Execution:-</b> The operating system helps to load a program into
-memory and run it.<br><br>
-<b>I/O Operations:-</b> Each running program may request for I/O operation and
+<b>Program Execution:-</b><p> The operating system helps to load a program into
+memory and run it.</p><br>
+<b>I/O Operations:-</b><p> Each running program may request for I/O operation and
 for efficiency and protection the users cannot control I/O devices directly.
 Thus, the operating system must provide some means to do I/O
-operations.<br><br>
-<b>File System Manipulation :-</b>Files are the most important part which is
+operations.</p><br>
+<b>File System Manipulation :-</b>
+<p>Files are the most important part which is
 needed by programs to read and write the files and files may also be
 created and deleted by names or by the programs. The operating system
-is responsible for the file management.<br><br>
-<b>Communications:-</b> Many times, one process needs to exchange
+is responsible for the file management.</p><br>
+<b>Communications:-</b> <p>Many times, one process needs to exchange
 information with another process, this exchange of information can takes
 place between the processes executing on the same computer or the
 exchange of information may occur between the process executing on the
 different computer systems, tied together by a computer network. All these
-things are taken care by operating system.<br><br>
-<b>Error Detection:-</b> It is necessary that the operating system must be aware
+things are taken care by operating system.</p><br>
+<b>Error Detection:-</b> <p>It is necessary that the operating system must be aware
 of possible errors and should take the appropriate action to ensure correct
-and consistent computing
+and consistent computing</p>
 <br><br>
 <h2>Batch Systems</h2>
 <p>
@@ -256,14 +257,14 @@ rather than it spends doing I/O activities.</li></ol>
 
         <h2>Long Term and Short Term Schedulers</h2>
       
-        <i class="fa-regular fa-star"></i> A long term scheduler or job scheduler selects processes from job pool
+       <li> A long term scheduler or job scheduler selects processes from job pool
 (mass storage device, where processes are kept for later execution) and
-loads them into memory for execution.<br><br>
-<i class="fa-regular fa-star"></i> A short term scheduler or CPU scheduler, selects from the main memory
+loads them into memory for execution.</li><br>
+<li>A short term scheduler or CPU scheduler, selects from the main memory
 among the processes that are ready to execute and allocates the CPU to
-one of them.<br><br>
-<i class="fa-regular fa-star"></i> The long term scheduler controls the degree of multiprogramming (the
-number of processes in memory).
+one of them.</li> <br>
+<li> The long term scheduler controls the degree of multiprogramming (the
+number of processes in memory).</li>
 
 <h3>Dispatcher</h3>
 <p>It is the module that gives control of the CPU to the process selected by the short term
@@ -284,12 +285,12 @@ and after selection that process gets the control of CPU.</p>
 The criteria for comparing CPU scheduling algorithms include the following<br><br>
 <b>CPU Utilization:-</b>
 Means keeping the CPU as busy as possible.<br><br>
-<b>Throughput :-</b>It is nothing but the measure of work i . e., the number of
-processes that are completed per time unit.<br><br>
-<b>Turnaround Time:-</b> The interval from the time of submission of a process to
+<b>Throughput :-</b><p>It is nothing but the measure of work i . e., the number of
+processes that are completed per time unit.</p><br>
+<b>Turnaround Time:-</b> <p>The interval from the time of submission of a process to
 the time of completion. It is the sum of the periods spent waiting to get into
-memory, waiting in the ready queue, executing on the CPU and doing I/O.<br><br>
-<b>Waiting Time:-</b> The sum of the periods spent waiting in the ready queue.<br><br>
+memory, waiting in the ready queue, executing on the CPU and doing I/O.</p><br>
+<b>Waiting Time:-</b> <p>The sum of the periods spent waiting in the ready queue.</p><br>
 <b>Response Time :-</b>The time from the submission of a request until the first
 response is produced.</p><br><br>
 <h3>First Come First Served (FCFS) Scheduling</h3>
@@ -455,13 +456,12 @@ critical section. That is, no two processes are executing in their critical
 sections at the same time.
 </p>
 
-<i class="fa-regular fa-star"></i> The critical section problem is to design a protocol that the processes can
+<li> The critical section problem is to design a protocol that the processes can
 use to cooperate. Each process must request permission to enter its
-critical section.
-<br><br>
-<i class="fa-regular fa-star"></i> The section of code implementing this request is the entry section. The
+critical section.</li>
+<li>The section of code implementing this request is the entry section. The
 critical section may be followed by an exit section. The remaining code is
-the remainder section.
+the remainder section.</li>
 <br><br><br>
 <i>General structure of a typical process Pi is given below</i><br>
 <img src="cs.png" alt=""><br><br>
@@ -504,12 +504,12 @@ modification (S - -).</p>
 
    <h3> Usage of Semaphores</h3>
 
-   <i class="fa-regular fa-star"></i>  We can use binary semaphores to deal with the critical section problem
+  <li> We can use binary semaphores to deal with the critical section problem
 for multiple processes. The n processes share a semaphore, mutex,
-initialized to 1.<br><br>
-<i class="fa-regular fa-star"></i>  The value of binary semaphore can range only between 0 and 1.
+initialized to 1.</li><br>
+<li> The value of binary semaphore can range only between 0 and 1.
 Binary semaphores are known as mutex locks as they are locks that
-provide mutual exclusion.<br><br>
+provide mutual exclusion.</li> <br>
 <p>Mutual exclusion implementation with semaphores</p>
 <img src="multi.png" alt="">
 <h4>Key Points</h4>
